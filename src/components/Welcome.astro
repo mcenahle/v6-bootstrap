@@ -1,0 +1,100 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<p>
+  <a
+    class="icon-link icon-link-hover"
+    href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/"
+    target="_blank"
+  >
+    详见 bootstrap v6 的开发文档
+    <Icon name="bi:arrow-up-right" class="bi" />
+  </a>，以及 <a
+    class="icon-link icon-link-hover"
+    href="https://github.com/twbs/bootstrap/tree/v6-dev"
+    target="_blank"
+  >
+    bootstrap v6 的源代码
+    <Icon name="bi:arrow-up-right" class="bi" />
+  </a>。
+</p>
+<p>
+  如要前往我的开发人员介绍页面，请前往 <a
+    class="icon-link icon-link-hover"
+    href="https://mcenahle.dev"
+    target="_blank"
+  >
+    https://mcenahle.dev
+    <Icon name="bi:arrow-up-right" class="bi" />
+  </a>。<a
+    class="btn-solid theme-success btn-styled"
+    href="https://mcenahle.dev"
+    target="_blank"
+    role="button">你也可通过此按钮进行跳转 <Icon name="mdi:open-in-new" /></a
+  >
+</p>
+<div class="alert theme-accent" role="alert" style="margin-bottom: 1rem;">
+  <p>
+    <Icon name="mdi:test-tube" /> 本网站为实验性网站，可能会随时添加新内容/移除内容，仅为
+    test 用途。
+  </p>
+</div>
+
+<button type="button" class="theme-primary btn-solid btn-styled">
+  Click me
+</button>
+
+<button type="button" class="theme-primary btn-solid btn-styled">
+  <Icon name="bi:arrow-right" />
+  With left icon
+</button>
+
+<button type="button" class="theme-primary btn-solid btn-styled"
+  >With right icon
+  <Icon name="bi:arrow-right" />
+</button>
+
+<button
+  type="button"
+  class="btn-icon theme-primary btn-solid btn-styled"
+  aria-label="Icon only"
+>
+  <Icon name="bi:plus-lg" />
+</button>
+
+<hr />
+<button
+  type="button"
+  class="btn-solid theme-primary btn-styled"
+  data-bs-toggle="dialog"
+  data-bs-target="#exampleDialog"
+>
+  我看到 bootstrap 6 按钮的第一印象
+</button>
+
+<dialog class="dialog dialog-slide-down" id="exampleDialog">
+  <div class="dialog-header">
+    <h1 class="dialog-title">我看到 bootstrap 6 按钮的第一印象</h1>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="dialog"
+      aria-label="Close"></button>
+  </div>
+  <div class="dialog-body">
+    <p>苹果表示非常的 nice。</p>
+  </div>
+  <div class="dialog-footer">
+    <button
+      type="button"
+      class="btn-solid theme-secondary btn-styled"
+      data-bs-dismiss="dialog">关闭</button
+    >
+    <button
+      type="button"
+      class="btn-solid theme-primary btn-styled"
+      onclick="alert('英雄所见略同！')">确实如此</button
+    >
+  </div>
+</dialog>

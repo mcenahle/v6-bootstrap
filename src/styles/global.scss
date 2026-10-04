@@ -1,0 +1,18 @@
+@use "bootstrap/scss/bootstrap";
+
+.container {
+  margin: 20px auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+@media (max-width: 420px) {
+  .container {
+    margin: 10px 0px 0px 0px;
+  }
+}
+
+p,
+a {
+  word-break: break-all;
+}
